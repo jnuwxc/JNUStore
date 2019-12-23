@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script src="js/good.js"></script>
+    <script src="js/share.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/good.css">
+    <link rel="stylesheet" type="text/css" href="css/share.css">
+</head>
+<body>
+<div class="header">
+    <p style="white-space: nowrap"><a href="login.html">请登录</a></p>
+    <div id="shopCart">购物车</div>
+    <div id="order">订单管理</div>
+    <div id="address">我的地址</div>
+    <a href="index.html">返回主页</a>
+</div>
+<div class="left">
+    <img class="gpicture">
+    <div>
+        <img src="images/collection.png" id="collection"/>
+        <a href="javascript:void(0)" class="share"><img style="width: 40px; height: 40px; margin-left: 50px" src="images/share.png"/></a>
+<!--        下面的代码是分享按钮的功能-->
+        <script  type="text/javascript">
+            $('.share').shareConfig({
+                Shade : true, //是否显示遮罩层
+                Event:'click', //触发事件
+                Content : 'Share', //内容DIV ID
+                Title : '分享' //显示标题
+            });
+        </script>
+        <img src="images/against.png" id="against"/>
+    </div>
+</div>
+<div class="goodsInfo">
+    <div class="gname">商品名字</div>
+    <div class="gprice">商品价格</div>
+    <div class="gdetails">
+        <div class="gnum"></div>
+        <p></p>
+    </div>
+
+<!--    分割线-->
+    <HR align=center width=100% color=#dfdfdf SIZE=2 style="margin-top: 10px;">
+    <div class="address">
+        配送
+        <input type="text" value="默认地址">
+    </div>
+    <div class="server">
+        服务
+        <div class="server-item">送货上门</div>
+        <div class="server-item" id="inspection">系统验货</div>
+        <div class="server-item">七天退货</div>
+    </div>
+    <div class="shop-cart">
+        数量
+        <button id="add-btn">+</button>
+        <input type="number" id="num-input" value="1">
+        <button id="minus-btn">-</button><br/>
+        <button class="add-cart">加入购物车</button>
+    </div>
+
+    <!--    分割线-->
+    <HR align=center width=100% color=#dfdfdf SIZE=2 style="margin-top: 10px;">
+    <ul class="comments">
+        <li>评价1</li>
+        <li>评价2</li>
+        <li>评价3</li>
+        <li>评价4</li>
+        <li>评价5</li>
+    </ul>
+</div>
+</body>
+</html>
+

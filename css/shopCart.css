@@ -1,0 +1,134 @@
+body{
+    background-color: #FFFFFF;
+    margin: 0;
+}
+.header {
+    height: 40px;
+    width: 100%;
+    background-color: #e3e4e5;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.header div,a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.logo {
+    height: 100px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.3rem;
+}
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.logo span {
+    position: absolute;
+    right: 0px;
+}
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.list-head {
+    height: 40px;
+    background-color: #f3f3f3;
+    border: #e0e0e0 1px solid;
+    display: flex;
+    align-items: center;
+}
+.list-head .goods-label {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.list-head .num-label {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.list-head .delete-label {
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.list {
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+    border-left: #f1f1f1 1px solid;
+    border-right: #f1f1f1 1px solid;
+    border-top: #aaaaaa 2px solid;
+    /*border-bottom: #aaaaaa 2px solid;*/
+    display: flex;
+    align-items: center;
+}
+.list img {
+    margin-top: 10px;
+    height: 180px;
+    width: 180px;
+}
+.list .goods-info {
+    width: 35%;
+    margin-left: 5%;
+    margin-right: 6%;
+    display: flex;
+    align-items: center;
+}
+.list .gnum{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.list .delete-btn{
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.info {
+    text-align: center;
+    width: 20%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.commit {
+    width: 70%;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: #a9a9a9 1px solid;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.cart-remove {
+    margin-left: 10px;
+}
+.total {
+    position: absolute;
+    right: 150px;
+    font-size: 1.3rem;
+    color: #df3033;
+}
+.settlement {
+    width: 100px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #df3033;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+}
