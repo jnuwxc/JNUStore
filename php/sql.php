@@ -2,7 +2,7 @@
 header("content-type:text/html; charset=utf-8");
 $statement = $_POST['sql'];
 $db = "wxc";
-$conn = mysql_connect("47.102.141.39:3306", "wxc", "wxc12345");
+$conn = mysql_connect("47.102.141.39:3306", "***", "******");//账号密码就保密了哈
 if (!$conn) {
     die('Could not connect: ' . mysql_error());
 }
